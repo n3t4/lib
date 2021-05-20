@@ -1,0 +1,19 @@
+let img;
+ let img1;
+ let miContador = 0;
+
+function setup () {
+  // el tamaño es de 192x157 y se ajusta automaticamente
+  createCanvas(windowWidth, windowHeight);
+  background(9)
+  
+  img = loadImage ('/media/user74bba22728/weirdtransparent4.png');
+  img1 = loadImage ('/media/user74bba22728/weirdtransparent4.png');
+}
+
+
+function draw() {
+  //background(178)
+  miContador = miContador + 9
+  image(img,2+sin(miContador/10)*150,0.2,img.width / 2,img.height / 2)
+}
